@@ -1,0 +1,87 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#title {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.one {
+    border: 3px solid #000;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    margin: 30px;
+}
+
+.choice {
+    display: flex;
+    justify-content: space-around;
+}
+
+.massage {
+    text-align: right;
+    margin: 30px;
+}
+
+
+.on1,
+.on2,
+.on3,
+.on4,
+.on5,
+.on6,
+.on7,
+.on8,
+.on9,
+.on10 {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    background-color: white;
+    color: #000;
+    border: 3px solid #000;
+    border-radius: 10px;
+    width: 75px;
+    height: 40px;
+    font-size: large;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    cursor: pointer;
+}
+
+.line {
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    z-index: 1000;
+    border: 3px solid #000;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.line a {
+    color: #000;
+    font-size: larger;
+    text-decoration: none;
+    transition: 0.5s;
+    border-radius: 10px;
+    border: 3px solid rgb(255, 255, 255);
+}
+
+.line a:hover {
+    color: white;
+    transform: scale(1.1);
+    background-color: #000;
+    border: 3px solid rgb(255, 255, 255);
+}
