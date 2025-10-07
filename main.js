@@ -144,3 +144,23 @@ function ten3() {
     on10.innerHTML = "<h4>غلط</h4><h3>السؤال العاشر</h3>";
     on10.style.color = "white";
 }
+function toggleMenu() {
+    const menu = document.getElementById('dropdownMenu');
+    const icon = document.querySelector('.menu-icon');
+
+    if (menu.style.display === 'block') {
+        menu.style.display = 'none';
+        icon.classList.remove('active');
+    } else {
+        menu.style.display = 'block';
+        icon.classList.add('active');
+    }
+}
+
+// إغلاق القائمة عند الضغط خارجها
+window.onclick = function (event) {
+    if (!event.target.matches('.menu-icon') && !event.target.matches('.menu-line')) {
+        document.getElementById('dropdownMenu').style.display = 'none';
+        document.querySelector('.menu-icon').classList.remove('active');
+    }
+}
